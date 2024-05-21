@@ -1,0 +1,18 @@
+
+###############################
+Samples:
+    import { useState } from 'react';
+
+
+    const [name,setName] = useState('Yoki');
+    const [num,setNum] = useState(0);
+    const [inputName,setInputName] = useState("");
+
+    <div> <b> My name is {name} </b> </div>
+    <button onClick={()=> { setName('Yokesh') } }>Change it!</button> <br/>
+
+    <div>The number is {num}</div>
+    <button onClick={()=> {setNum(num + 1)}} >Btn</button>
+
+    <input type='text' placeholder='type name:'  onChange={(event)=> setInputName(event.target.value)}/>
+    <h2>{ inputName }</h2>
